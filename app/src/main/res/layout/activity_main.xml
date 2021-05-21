@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+
+
+        android:text="Name"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/name"
+
+        android:text="Email"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/email"
+        android:layout_below="@id/nameTxt"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phoneTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/phone"
+        android:layout_below="@id/emailTxt"
+        android:ems="10"
+        android:hint="PHONE"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/email"
+
+        android:text="Phone "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/university"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/gender"
+
+        android:text="University"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/UniversityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/university"
+        android:layout_below="@id/genderSpn"
+        android:ems="10"
+        android:hint="UNIVERSITY"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/gender"
+
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/phone"
+
+        android:text="Gender"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="Gender" />
+
+    <Spinner
+        android:id="@+id/genderSpn"
+
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/gender"
+        android:layout_below="@id/phoneTxt" />
+
+    <Button
+        android:id="@+id/Addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@id/courseSpn"
+        android:layout_centerVertical="true"
+        android:onClick="btnAddOnClick"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/course"
+       android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/university"
+
+        android:text="please pick a course?"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/courseSpn"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/course"
+        android:layout_below="@id/UniversityTxt"  />
+
+</RelativeLayout>
